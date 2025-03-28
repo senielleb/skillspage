@@ -1,0 +1,163 @@
+body {
+    background-color: #faeee7;
+    margin: 0px;
+}
+header {
+    background-color: #33272a; 
+    padding: 20px;
+    text-align: center;
+    border-radius: 50px;
+    margin: 50px
+    
+}
+
+nav a {
+    color: #f2f7f5;
+    padding: 1em 1.5em;
+    font-weight: bold;
+    margin: 5px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-family:'Arial Narrow Bold', sans-serif;
+    text-transform: capitalize;
+}
+
+nav a:hover {
+    background-color: #f2f7f5; 
+    color: #00473e;
+}
+
+.dropdown-box {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 20px;
+    background-color: #33272a;
+    font-size: 15px;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Dropdown links */
+.dropdown-menu a {
+    display: block;
+    padding: 15px;
+}
+
+/* Hover effect */
+.dropdown-menu a:hover {
+    background-color: #f2f7f5;
+}
+
+/* Show dropdown on hover and when clicked */
+.dropdown-box:hover .dropdown-menu,
+.dropdown-box:focus-within .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Delay hiding the dropdown to last longer */
+.dropdown-box .dropdown-menu {
+    transition-delay: 0.5s; /* Keeps it visible for 0.5s after hover/click */
+}
+
+nav a:hover {
+    background-color: #f2f7f5; 
+    color: #33272a;
+}
+.whole {
+    margin: 55px;
+}
+
+.title {
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.buttons {
+    padding: 20px;
+    text-align: center;
+    border-radius: 50px ;
+    margin: 5px;
+    
+}
+
+.buttons a {
+    color:  #33272a ;
+    background-color: #ff8ba7;
+    padding: 15px 30px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-decoration: none;
+    border: 1px solid #33272a; /* Border with color */
+    border-radius: 50px;
+    font-family:'Arial Narrow Bold', sans-serif;
+    text-transform: capitalize;
+}
+
+.paragraph {
+    text-align: justify;
+    font-family:'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    padding: 40px;
+    background-color: #f2f7f5;
+    margin: 20px;
+    border-radius: 50px;
+    box-shadow: 1px 10px 10px rgba(0.1, 0, 0, 0.1); 
+}
+
+.paragraph-title {
+    text-align: center;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.images {
+    display: flex;
+    justify-content: center; 
+    gap: 10px;
+}
+
+.paragraph a {
+    color:  #33272a ;
+    background-color: #ff8ba7;
+    padding: 5px 5px;
+    font-weight: bold;
+    margin: 10px;
+    text-decoration: none;
+    border: 1px solid #33272a; 
+    border-radius: 50px;
+    font-family:'Arial Narrow Bold', sans-serif;
+    text-transform: capitalize;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.gallery a {
+    text-decoration: none;
+    background-color:  #faeee7;
+    border-radius: 0%;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 200px;
+    height: auto;
+    transition: transform 0.2s ease-in-out;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
